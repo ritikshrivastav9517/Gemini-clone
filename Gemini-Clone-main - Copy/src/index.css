@@ -1,0 +1,44 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Outfit', sans-serif;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+}
+
+/* Light Mode (default) */
+body.light-mode {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+/* Optional UI Components */
+.toggle-button {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 30px;
+  position: absolute;
+  top: 10px;
+  right: 70px; /* Adjust near profile */
+}
+
+.toggle-button.dark {
+  background-color: #333333;
+  color: #ffffff;
+}
